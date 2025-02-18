@@ -94,7 +94,7 @@ TikCord/
 
 ## 🤝 Contribution
 
-Les contributions sont les bienvenues ! Consultez nos [guidelines de contribution](https://github.com/walidoudou/TikCord/blob/main/CONTRIBUTING.md).
+Les contributions sont les bienvenues ! Consultez nos [guidelines de contribution](https://github.com/walidoudou/TikCord/CONTRIBUTING.md).
 
 1. Forkez le projet
 2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
@@ -104,7 +104,7 @@ Les contributions sont les bienvenues ! Consultez nos [guidelines de contributio
 
 ## 📝 Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/walidoudou/TikCord/blob/main/LICENSE) pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/walidoudou/TikCord/LICENSE) pour plus de détails.
 
 ## ✨ Crédit
 
@@ -114,7 +114,7 @@ Développé avec ❤️ par [walidoudou](https://github.com/walidoudou).
 
 Une question ? Un problème ? N'hésitez pas à :
 - Ouvrir une [issue](https://github.com/walidoudou/TikCord/issues)
-- Rejoindre notre [serveur Discord](https://discord.gg/votre-serveur)
+- Rejoindre notre [serveur Discord](https://discord.gg/5Syw9ngqnz)
 - Consulter la [documentation](https://github.com/walidoudou/TikCord/wiki)
 
 ---
