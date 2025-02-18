@@ -43,7 +43,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## Auteurs
 
-- **Votre Nom** - *Développeur principal* - [walidoudou](https://github.com/walidoudou)
+- **Walidoudou** - *Développeur principal* - [walidoudou](https://github.com/walidoudou)
 
 ## Remerciements
 
