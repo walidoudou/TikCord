@@ -1,6 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config(); // Assurez-vous que dotenv est bien chargé pour les variables d'environnement
 
 const ensureDownloadDirectory = (platform, type) => {
     const downloadPath = path.join(__dirname, '../../downloads', platform, type);
@@ -10,6 +11,7 @@ const ensureDownloadDirectory = (platform, type) => {
     return downloadPath;
 };
 
+// Téléchargement vidéo TikTok
 const downloadTikTokVideo = async (url) => {
     try {
         const rapidApiResponse = await axios.get('https://tiktok-video-no-watermark2.p.rapidapi.com/', {
@@ -26,7 +28,7 @@ const downloadTikTokVideo = async (url) => {
 
         const videoData = rapidApiResponse.data.data;
         const videoUrl = videoData.play;
-        
+
         const videoResponse = await axios.get(videoUrl, {
             responseType: 'arraybuffer',
             headers: {
@@ -37,11 +39,11 @@ const downloadTikTokVideo = async (url) => {
         const downloadDir = ensureDownloadDirectory('tiktok', 'video');
         const fileName = `tiktok_${Date.now()}.mp4`;
         const filePath = path.join(downloadDir, fileName);
-        
+
         fs.writeFileSync(filePath, videoResponse.data);
-        
-        return { 
-            filePath, 
+
+        return {
+            filePath,
             mediaInfo: {
                 type: 'video',
                 title: videoData.title || 'TikTok Video',
@@ -54,14 +56,16 @@ const downloadTikTokVideo = async (url) => {
             }
         };
     } catch (error) {
+        console.error(`Erreur lors du téléchargement TikTok: ${error.message}`);
         throw new Error(`Erreur lors du téléchargement TikTok: ${error.message}`);
     }
 };
 
+// Téléchargement média Pinterest
 const downloadPinterestMedia = async (url) => {
     try {
         const cleanUrl = url.split('?')[0];
-        
+
         const options = {
             method: 'GET',
             url: 'https://pinterest-video-and-image-downloader.p.rapidapi.com/pinterest',
@@ -94,11 +98,11 @@ const downloadPinterestMedia = async (url) => {
         const extension = isVideo ? 'mp4' : 'jpg';
         const fileName = `pinterest_${Date.now()}.${extension}`;
         const filePath = path.join(downloadDir, fileName);
-        
+
         fs.writeFileSync(filePath, mediaResponse.data);
-        
-        return { 
-            filePath, 
+
+        return {
+            filePath,
             mediaInfo: {
                 type: mediaType,
                 title: mediaData.title || 'Pinterest Media',
@@ -111,11 +115,12 @@ const downloadPinterestMedia = async (url) => {
             }
         };
     } catch (error) {
+        console.error(`Erreur lors du téléchargement Pinterest: ${error.message}`);
         throw new Error(`Erreur lors du téléchargement Pinterest: ${error.message}`);
     }
 };
 
 module.exports = {
     downloadTikTokVideo,
-    downloadPinterestMedia
+    downloadPinterestMedia,
 };
