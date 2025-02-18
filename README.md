@@ -14,7 +14,7 @@ TikCord est un bot automatisé conçu pour convertir les vidéos TikTok en MP4 s
 
 1. Clonez le dépôt:
     ```bash
-    git clone https://github.com/votre-utilisateur/TikBot.git
+    git clone https://github.com/walidoudou/TikCord.git
     ```
 2. Accédez au répertoire du projet:
     ```bash
@@ -43,7 +43,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## Auteurs
 
-- **Votre Nom** - *Développeur principal* - [Votre Profil GitHub](https://github.com/votre-utilisateur)
+- **Votre Nom** - *Développeur principal* - [walidoudou](https://github.com/walidoudou)
 
 ## Remerciements
 
