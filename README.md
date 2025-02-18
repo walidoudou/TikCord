@@ -53,7 +53,7 @@ Créez un fichier `.env` à la racine du projet avec les variables suivantes :
 ```env
 TOKEN=votre_token_discord_bot
 RAPID_API_KEY=votre_cle_rapidapi
-CLIENT_ID=le_client_id_de_votre
+CLIENT_ID=le_client_id_de_votre_bot
 ```
 
 ## 🚀 Utilisation
