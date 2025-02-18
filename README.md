@@ -1,50 +1,128 @@
-# TikCord
+# 🤖 TikCord
 
-TikCord est un bot automatisé conçu pour convertir les vidéos TikTok en MP4 sans filigrane.
+<div align="center">
 
-## Fonctionnalités
+![TikCord Banner](https://raw.githubusercontent.com/walidoudou/TikCord/main/assets/banner.png)
 
-- **Conversion Vidéo**: Convertit les vidéos TikTok en MP4 sans filigrane.
+[![GitHub license](https://img.shields.io/github/license/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/issues)
+[![GitHub forks](https://img.shields.io/github/forks/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/network)
 
-## Prérequis
+**TikCord est un bot Discord élégant qui transforme vos liens TikTok et Instagram en vidéos téléchargeables sans filigrane.**
 
-- Node.js
+[Installation](#-installation) • 
+[Fonctionnalités](#-fonctionnalités) • 
+[Utilisation](#-utilisation) • 
+[Configuration](#-configuration) • 
+[Support](#-support)
 
-## Installation
+</div>
 
-1. Clonez le dépôt:
-    ```bash
-    git clone https://github.com/walidoudou/TikCord.git
-    ```
-2. Accédez au répertoire du projet:
-    ```bash
-    cd TikCord
-    ```
-3. Installez les dépendances:
-    ```bash
-    npm install
-    ```
+## 🌟 Fonctionnalités
 
-## Utilisation
+### TikTok
+- 📥 Téléchargement de vidéos sans filigrane
+- 🎥 Support de la haute qualité
+- 🔄 Conversion rapide et efficace
 
-1. Configurez les paramètres dans le fichier `.env.exemple` en ajoutant votre clé API `tiktok-video-no-watermark2.p.rapidapi.com` et le token du bot Discord, puis renommez-le en `.env`.
-2. Lancez le bot:
-    ```bash
-    node index.js
-    ```
+### Instagram
+- 📱 Support des posts classiques
+- 🎬 Support des réels
+- 🖼️ Conservation de la qualité originale
 
-## Contribuer
+### Général
+- 📁 Organisation automatique des fichiers
+- ⚡ Traitement ultra-rapide
+- 🧹 Nettoyage automatique
+- 💾 Gestion optimisée du stockage
 
-Les contributions sont les bienvenues! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
+## 📦 Installation
 
-## Licence
+1. **Clonez le projet**
+```bash
+git clone https://github.com/walidoudou/TikCord.git
+cd TikCord
+```
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+2. **Installez les dépendances**
+```bash
+npm install
+```
 
-## Auteurs
+3. **Configurez l'environnement**
+```bash
+cp .env.example .env
+# Éditez le fichier .env avec vos informations
+```
 
-- **Walidoudou** - *Développeur principal* - [walidoudou](https://github.com/walidoudou)
+## ⚙️ Configuration
 
-## Remerciements
+Créez un fichier `.env` à la racine du projet avec les variables suivantes :
 
-- Merci à tous ceux qui ont contribué à ce projet.
+```env
+TOKEN=votre_token_discord
+RAPID_API_KEY=votre_cle_rapidapi
+```
+
+## 🚀 Utilisation
+
+### Commandes disponibles
+
+| Commande | Description | Exemple |
+|----------|-------------|---------|
+| `/tiktok` | Télécharge une vidéo TikTok | `/tiktok lien:https://vm.tiktok.com/...` |
+| `/instagram` | Télécharge un post/réel Instagram | `/instagram lien:https://www.instagram.com/p/...` |
+
+## 📂 Structure du Projet
+
+```
+TikCord/
+├── src/
+│   ├── commands/      # Commandes Discord
+│   ├── utils/         # Utilitaires
+│   └── index.js       # Point d'entrée
+├── downloads/         # Téléchargements organisés
+└── ...
+```
+
+## ⚠️ Prérequis
+
+- Node.js 16.9.0 ou supérieur
+- Un compte Discord Developer
+- Un compte RapidAPI
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! Consultez nos [guidelines de contribution](https://github.com/walidoudou/TikCord/blob/main/CONTRIBUTING.md).
+
+1. Forkez le projet
+2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
+3. Committez vos changements (`git commit -m 'Add: Amazing Feature'`)
+4. Pushez vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
+## 📝 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/walidoudou/TikCord/blob/main/LICENSE) pour plus de détails.
+
+## ✨ Crédit
+
+Développé avec ❤️ par [walidoudou](https://github.com/walidoudou).
+
+## 💬 Support
+
+Une question ? Un problème ? N'hésitez pas à :
+- Ouvrir une [issue](https://github.com/walidoudou/TikCord/issues)
+- Rejoindre notre [serveur Discord](https://discord.gg/votre-serveur)
+- Consulter la [documentation](https://github.com/walidoudou/TikCord/wiki)
+
+---
+
+<div align="center">
+  
+Fait avec ❤️ pour la communauté Discord.
+
+**[⬆ Retour en haut](#-tikcord)**
+
+</div>
