@@ -4,7 +4,7 @@
 
 ![TikCord Banner](https://raw.githubusercontent.com/walidoudou/TikCord/main/assets/banner.png)
 
-[![GitHub license](https://img.shields.io/github/license/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/issues)
 [![GitHub forks](https://img.shields.io/github/forks/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/network)
