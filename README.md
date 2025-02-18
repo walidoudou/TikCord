@@ -8,7 +8,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/issues)
 [![GitHub forks](https://img.shields.io/github/forks/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/network)
 
-**TikCord est un bot Discord élégant qui transforme vos liens TikTok et Instagram en vidéos téléchargeables sans filigrane.**
+**TikCord est un bot Discord élégant qui transforme vos liens TikTok en vidéos téléchargeables sans filigrane, optimisé pour une intégration parfaite dans vos serveurs.**
 
 [Installation](#-installation) • 
 [Fonctionnalités](#-fonctionnalités) • 
@@ -20,21 +20,12 @@
 
 ## 🌟 Fonctionnalités
 
-### TikTok
-- 📥 Téléchargement de vidéos sans filigrane
-- 🎥 Support de la haute qualité
+- 📥 Téléchargement instantané des vidéos TikTok sans filigrane
+- 🎥 Support de la haute qualité (HD)
 - 🔄 Conversion rapide et efficace
-
-### Instagram
-- 📱 Support des posts classiques
-- 🎬 Support des réels
-- 🖼️ Conservation de la qualité originale
-
-### Général
-- 📁 Organisation automatique des fichiers
-- ⚡ Traitement ultra-rapide
-- 🧹 Nettoyage automatique
-- 💾 Gestion optimisée du stockage
+- 📁 Organisation automatique des fichiers téléchargés
+- 🧹 Nettoyage automatique après téléchargement
+- ⚡ Temps de réponse optimisé
 
 ## 📦 Installation
 
@@ -60,18 +51,17 @@ cp .env.example .env
 Créez un fichier `.env` à la racine du projet avec les variables suivantes :
 
 ```env
-TOKEN=votre_token_discord
+TOKEN=votre_token_discord_bot
 RAPID_API_KEY=votre_cle_rapidapi
 ```
 
 ## 🚀 Utilisation
 
-### Commandes disponibles
+### Commande disponible
 
 | Commande | Description | Exemple |
 |----------|-------------|---------|
 | `/tiktok` | Télécharge une vidéo TikTok | `/tiktok lien:https://vm.tiktok.com/...` |
-| `/instagram` | Télécharge un post/réel Instagram | `/instagram lien:https://www.instagram.com/p/...` |
 
 ## 📂 Structure du Projet
 
@@ -81,7 +71,8 @@ TikCord/
 │   ├── commands/      # Commandes Discord
 │   ├── utils/         # Utilitaires
 │   └── index.js       # Point d'entrée
-├── downloads/         # Téléchargements organisés
+├── downloads/         # Dossier de téléchargement
+│   └── tiktok/       # Vidéos TikTok
 └── ...
 ```
 
@@ -89,21 +80,21 @@ TikCord/
 
 - Node.js 16.9.0 ou supérieur
 - Un compte Discord Developer
-- Un compte RapidAPI
+- Un compte RapidAPI avec abonnement à l'API TikTok
 
 ## 🤝 Contribution
 
-Les contributions sont les bienvenues ! Consultez nos [guidelines de contribution](https://github.com/walidoudou/TikCord/CONTRIBUTING.md).
+Les contributions sont les bienvenues ! Consultez nos [guidelines de contribution](https://github.com/walidoudou/TikCord/blob/main/CONTRIBUTING.md).
 
 1. Forkez le projet
-2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add: Amazing Feature'`)
-4. Pushez vers la branche (`git push origin feature/AmazingFeature`)
+2. Créez votre branche (`git checkout -b feature/NouvelleFeature`)
+3. Committez vos changements (`git commit -m 'Add: Nouvelle Feature'`)
+4. Pushez vers la branche (`git push origin feature/NouvelleFeature`)
 5. Ouvrez une Pull Request
 
 ## 📝 Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/walidoudou/TikCord/LICENSE) pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/walidoudou/TikCord/blob/main/LICENSE) pour plus de détails.
 
 ## ✨ Crédit
 

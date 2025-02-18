@@ -35,34 +35,4 @@ const downloadTikTokVideo = async (url) => {
     }
 };
 
-const downloadInstagramMedia = async (url, type) => {
-    try {
-        const rapidApiResponse = await axios.get('https://instagram-downloader-download-instagram-videos-stories.p.rapidapi.com/index', {
-            params: { url },
-            headers: {
-                'X-RapidAPI-Key': process.env.RAPID_API_KEY,
-                'X-RapidAPI-Host': 'instagram-downloader-download-instagram-videos-stories.p.rapidapi.com'
-            }
-        });
-
-        if (!rapidApiResponse.data?.media) {
-            throw new Error('Média Instagram non trouvé');
-        }
-
-        const mediaUrl = rapidApiResponse.data.media;
-        const mediaResponse = await axios.get(mediaUrl, {
-            responseType: 'arraybuffer'
-        });
-
-        const fileName = `instagram_${type}_${Date.now()}.mp4`;
-        const filePath = getFilePath(`instagram_${type}`, 'video', fileName);
-        
-        fs.writeFileSync(filePath, mediaResponse.data);
-        return { filePath, mediaInfo: rapidApiResponse.data };
-    } catch (error) {
-        console.error('Erreur Instagram:', error.message);
-        throw error;
-    }
-};
-
-module.exports = { downloadTikTokVideo, downloadInstagramMedia };
+module.exports = { downloadTikTokVideo };

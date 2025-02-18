@@ -3,9 +3,7 @@ const path = require('path');
 
 const createDownloadDirectories = () => {
     const dirs = [
-        'downloads/tiktok',
-        'downloads/instagram_reels',
-        'downloads/instagram_posts'
+        'downloads/tiktok'
     ];
 
     dirs.forEach(dir => {
@@ -19,9 +17,7 @@ const createDownloadDirectories = () => {
 const getFilePath = (platform, type, fileName) => {
     const baseDir = path.join(__dirname, '../../downloads');
     const dirMap = {
-        tiktok: 'tiktok',
-        instagram_reel: 'instagram_reels',
-        instagram_post: 'instagram_posts'
+        tiktok: 'tiktok'
     };
     
     return path.join(baseDir, dirMap[platform], fileName);
