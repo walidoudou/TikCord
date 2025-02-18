@@ -2,13 +2,11 @@
 
 <div align="center">
 
-<!-- ![TikCord Banner](https://raw.githubusercontent.com/walidoudou/TikCord/main/assets/banner.png) -->
-
 [![GitHub stars](https://img.shields.io/github/stars/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/issues)
 [![GitHub forks](https://img.shields.io/github/forks/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/network)
 
-**TikCord est un bot Discord élégant qui transforme vos liens TikTok en vidéos téléchargeables sans filigrane, optimisé pour une intégration parfaite dans vos serveurs.**
+**TikCord est un bot Discord élégant qui transforme vos liens TikTok et Pinterest en contenu téléchargeable sans filigrane, optimisé pour une intégration parfaite dans vos serveurs.**
 
 [Installation](#-installation) • 
 [Fonctionnalités](#-fonctionnalités) • 
@@ -20,12 +18,21 @@
 
 ## 🌟 Fonctionnalités
 
-- 📥 Téléchargement instantané des vidéos TikTok sans filigrane
+### TikTok
+- 📥 Téléchargement instantané des vidéos sans filigrane
 - 🎥 Support de la haute qualité (HD)
 - 🔄 Conversion rapide et efficace
-- 📁 Organisation automatique des fichiers téléchargés
+
+### Pinterest
+- 🖼️ Support des images en haute qualité
+- 🎬 Support des vidéos épinglées
+- 📝 Conservation des métadonnées originales
+
+### Général
+- 📁 Organisation automatique des fichiers par plateforme
 - 🧹 Nettoyage automatique après téléchargement
 - ⚡ Temps de réponse optimisé
+- 💾 Gestion intelligente du stockage temporaire
 
 ## 📦 Installation
 
@@ -58,11 +65,12 @@ CLIENT_ID=le_client_id_de_votre_bot
 
 ## 🚀 Utilisation
 
-### Commande disponible
+### Commandes disponibles
 
 | Commande | Description | Exemple |
 |----------|-------------|---------|
 | `/tiktok` | Télécharge une vidéo TikTok | `/tiktok lien:https://vm.tiktok.com/...` |
+| `/pinterest` | Télécharge une image ou vidéo Pinterest | `/pinterest lien:https://pin.it/...` |
 
 ## 📂 Structure du Projet
 
@@ -73,7 +81,8 @@ TikCord/
 │   ├── utils/         # Utilitaires
 │   └── index.js       # Point d'entrée
 ├── downloads/         # Dossier de téléchargement
-│   └── tiktok/       # Vidéos TikTok
+│   ├── tiktok/       # Vidéos TikTok
+│   └── pinterest/    # Médias Pinterest
 └── ...
 ```
 
@@ -81,7 +90,9 @@ TikCord/
 
 - Node.js 16.9.0 ou supérieur
 - Un compte Discord Developer
-- Un compte RapidAPI avec abonnement à l'API TikTok
+- Un compte RapidAPI avec abonnement aux APIs :
+  - TikTok Video Downloader
+  - Pinterest Video and Image Downloader
 
 ## 🤝 Contribution
 

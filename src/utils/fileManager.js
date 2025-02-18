@@ -1,9 +1,11 @@
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
 
 const createDownloadDirectories = () => {
     const dirs = [
-        'downloads/tiktok'
+        'downloads/pinterest/video',
+        'downloads/pinterest/image',
+        'downloads/tiktok/video'
     ];
 
     dirs.forEach(dir => {
@@ -15,12 +17,18 @@ const createDownloadDirectories = () => {
 };
 
 const getFilePath = (platform, type, fileName) => {
-    const baseDir = path.join(__dirname, '../../downloads');
-    const dirMap = {
-        tiktok: 'tiktok'
-    };
+    if (!platform || !type || !fileName) {
+        console.error('Arguments manquants pour getFilePath:', { platform, type, fileName });
+        return null;
+    }
+
+    const basePath = path.join(__dirname, '../../downloads', platform, type);
     
-    return path.join(baseDir, dirMap[platform], fileName);
+    if (!fs.existsSync(basePath)) {
+        fs.mkdirSync(basePath, { recursive: true });
+    }
+
+    return path.join(basePath, fileName);
 };
 
 module.exports = { createDownloadDirectories, getFilePath };
