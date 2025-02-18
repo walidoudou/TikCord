@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![TikCord Banner](https://raw.githubusercontent.com/walidoudou/TikCord/main/assets/banner.png)
+<!-- ![TikCord Banner](https://raw.githubusercontent.com/walidoudou/TikCord/main/assets/banner.png) -->
 
 [![GitHub stars](https://img.shields.io/github/stars/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/walidoudou/TikCord)](https://github.com/walidoudou/TikCord/issues)
@@ -53,7 +53,7 @@ Créez un fichier `.env` à la racine du projet avec les variables suivantes :
 ```env
 TOKEN=votre_token_discord_bot
 RAPID_API_KEY=votre_cle_rapidapi
-CLIENT_ID=le_client_id_de_votre_bot
+CLIENT_ID=le_client_id_de_votre
 ```
 
 ## 🚀 Utilisation
